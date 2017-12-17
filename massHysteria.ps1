@@ -11,7 +11,7 @@ Invoke-Command -ComputerName $computer -ScriptBlock{
         {
             try
             {
-                ##stop-service $service.Name;
+                stop-service $service.Name;
             }
             catch
             {
